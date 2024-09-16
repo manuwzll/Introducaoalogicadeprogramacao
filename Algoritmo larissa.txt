@@ -1,0 +1,89 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : ler a idade de várias pessoas e calcula a media da idade quando
+// Autor(a)    : Emanuelly Lopes
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis 
+  idade: inteiro
+  media: real
+  contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("insira idade:")
+leia(idade)
+
+ enquanto idade >=0 faca
+  contador<-contador+1
+  media<-media+idade
+  escreval ("insira idade:")
+  leia (idade)
+  
+  fimenquanto
+  
+  escreval ("foram lidas",contador,"idades")
+  
+  media<-media/contador
+  escreval("a media das idades digitadas é:",media)
+
+Fimalgoritmo
+
+---------------------------------------------------------------------------------------
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : ler uma sequencia de numeros de usuario e escreva o dobro de cada numero lido,encerrar quando numero digitado for negativo
+// Autor(a)    : Emanuelly Lopes
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis 
+ numero,dobro: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  escreval ("insira um numero")
+  leia(numero)
+  
+  enquanto numero>=0 faca
+           dobro<-numero*2
+           escreval ("o valor do dobro de",numero,"é:",dobro)
+           escreval ("insira um numero")
+           leia (numero)
+ fimenquanto
+
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+Algor
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Larissa Ribeiro
+// Descrição   : solicitar o usuário login e senha,caso login e senha erados pedir para insirir novamente,caso certo exibir a mensagem "bem vindo ao sistema" login: admin, senha: admin123
+// Autor(a)    : Emanuelly Lopes
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis
+login,senha,admin,admin123:caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+ login:="admin"
+ senha:="admin123"
+ escreval("insira o login")
+ LEIA(login)
+ escreval ("insira a senha")
+  leia (senha)
+
+  enquanto (login <> "admin") ou (senha <> "admin123") faca
+   escreval ("login ou senha  incorreto")
+  leia (login)
+  leia(senha)
+
+  fimenquanto
+  escreval ("login e senha corretos,bem-vindo(a)")
+
+
+
+Fimalgoritmo
